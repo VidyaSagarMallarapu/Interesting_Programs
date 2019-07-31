@@ -4,6 +4,7 @@ import java.io.*;
 class A
 {
 
+    //sorting order 
     private final static TreeMap<Integer, String> map = new TreeMap<Integer, String>();
 
     static {
@@ -30,8 +31,10 @@ class A
 
 
 
+        //floorkey returns the less than or equal value to it.
         int l =  map.floorKey(number);
         if ( number == l ) {
+            //map.get return number as key and value will returns of key "number".
             return map.get(number);
         }
         return map.get(l) + toRoman(number-l);
