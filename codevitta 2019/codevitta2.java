@@ -34,7 +34,7 @@ class A
         //floorkey returns the less than or equal value to it.
         int l =  map.floorKey(number);
         if ( number == l ) {
-            //map.get return number as key and value will returns of key "number".
+            //map.get return value of matching key
             return map.get(number);
         }
         return map.get(l) + toRoman(number-l);
