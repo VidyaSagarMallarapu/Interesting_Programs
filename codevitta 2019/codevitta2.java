@@ -29,8 +29,9 @@ class A
     	int number=(int)number1;
 
 
-
         int l =  map.floorKey(number);
+                            System.out.println("the key"+l+",the number:"+number1);
+
         if ( number == l ) {
             return map.get(number);
         }
@@ -44,6 +45,7 @@ class A
         while(number>0&&number<4000)
         {
             String roman=toRoman(number);
+
             int leastbase=findLeastBase(roman);
 
             number=findDecimalofPericularBase(roman,leastbase);
